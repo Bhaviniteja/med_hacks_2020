@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/screens/home/drug.dart';
+import 'package:flutter_app/screens/Drugs/drug.dart';
 import 'package:flutter_app/services/auth.dart';
 
 class Home extends StatelessWidget {
