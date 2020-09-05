@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/screens/home/drug.dart';
 import 'package:flutter_app/services/auth.dart';
 
 class Home extends StatelessWidget {
@@ -10,7 +11,7 @@ class Home extends StatelessWidget {
     return Scaffold(
      backgroundColor: Colors.orange[50],
       appBar: AppBar(
-        title: Text('Med Tracker'),
+        title: Text('Med Tracker Home'),
         backgroundColor: Colors.blue[400],
         elevation: 0.0,
         actions: <Widget>[
@@ -22,6 +23,20 @@ class Home extends StatelessWidget {
               label: Text('logout'))
         ],
       ),
+      body: Container(
+        padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 50),
+        child: RaisedButton(
+          child: Text('Prescription Medication'),
+          onPressed: () async {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Drug()),
+            );
+          }
+        )
+      )
+
     );
   }
 }
+

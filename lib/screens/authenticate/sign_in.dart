@@ -41,6 +41,7 @@ class _SignInState extends State<SignIn> {
           onPressed: _signInAnonymously,
         ),
       ),
+
     );
   }
 }
